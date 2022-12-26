@@ -1,0 +1,21 @@
+{
+  "name": "log-with-color",
+  "version": "1.0.0",
+  "description": "Organizing log outputs to console. Convert log to InfluxDB lineprotocol",
+  "main": "index.js",
+  "homepage": "https://github.com/puruslotion/extremely-simple-logger",
+  "repository": "puruslotion/extremely-simple-logger",
+  "scripts": {
+    "build": "tsc && cp ./package.json ./dist/package.json && cp ./README.md ./dist/README.md",
+    "start": "node ./dist/index.js",
+    "dev": "npm run build && npm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PurusLotion",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "18.7.14",
+    "typescript": "4.8.2"
+  },
+  "keywords": ["logger", "log", "logs", "logging", "console", "print", "printing", "prints", "write", "writes", "writing", "color", "colors", "influxdb", "lineprotocol", "browser", "websocket"]
+}
