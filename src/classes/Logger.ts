@@ -98,7 +98,11 @@ export class Logger {
             return JSON.stringify({
                 name: error?.name,
                 message: error?.message,
-                stack: error?.stack
+                stack: error?.stack,
+                cause: error?.cause,
+                fileName: error?.fileName,
+                lineNumber: error?.lineNumber,
+                columnNumber: error?.columnNumber,
             })
         } else if (typeof error === "undefined") {
             return "undefined"
